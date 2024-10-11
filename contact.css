@@ -1,0 +1,182 @@
+/* General */
+.contenido-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10% 25% 5% 10%;
+    background-color: #f8f9fa;
+    gap: 5%;
+}
+.texto-contacto {
+    max-width: 45%;
+}
+/* Estilo de los textos */
+.contenido-contacto h1 {
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color:#2FAC66 ;
+}
+.contenido-contacto h2 {
+    color: black;
+    margin-bottom: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+}
+.info-contactos p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555555;
+    margin: 40px 0;
+    transition: color 0.3s ease; /* Añade transición para suavizar el cambio de color */
+}
+
+.info-contactos p i {
+    font-size: 24px;
+    color: #555555;
+    margin-right: 15px;
+    transition: color 0.3s ease; /* Transición para el ícono */
+}
+
+.info-contactos p:hover {
+    color: crimson; /* Cambia el color del texto y los íconos */
+    cursor: default;
+}
+
+.info-contactos p:hover i {
+    color: crimson; /* Asegura que el ícono también cambie de color junto con el texto */
+}
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+form input[type="text"], form input[type="tel"], form input[type="email"], form textarea {
+    width: 200%;
+    padding: 10px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #333333;
+}
+
+form input[type="text"]:focus, form input[type="tel"]:focus, form input[type="email"]:focus{
+    outline: solid 2px #1abc9c;
+}
+form textarea:focus{
+    outline: solid 2px #1abc9c;
+}
+form input[type="submit"] {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background-color: #16a085;
+}
+
+/* responsive tablets */
+@media screen and (max-width: 1225px){
+    form input[type="text"], form input[type="tel"], form input[type="email"], form textarea{
+        width: 180%;
+    }
+    .contenido-contacto h1 {
+        font-size: 55px;
+    }
+
+    .contenido-contacto h2 {
+        font-size: 35px;
+    }
+    .formulario p{
+        font-size: 25px;
+    }
+    form input[type="text"], form input[type="tel"], form input[type="email"], form textarea{
+        font-size: 20px;
+    }
+    .info-contactos p{
+        font-size: 22px;
+    }
+    #icocon{
+        font-size: 30px;
+    }
+    .tex-contact{
+        font-size: 25px;
+    }
+    form input[type="checkbox"]{
+        transform: scale(1.5);
+    }
+    #aceptoterminos{
+        font-size: 23px;
+        margin-left: 15px;
+    }
+}
+
+
+/* Responsivo celular */
+@media screen and (max-width: 990px) {
+    .contenido-contacto {
+        flex-direction: column; /* Apila el contenido verticalmente */
+        align-items: center; /* Centra los elementos en el eje cruzado */
+        padding: 5%; /* Ajusta el padding si es necesario */
+        margin-top: 150px;
+    }
+
+    form {
+        margin-top: 30px; /* Mueve el formulario hacia abajo */
+        display: flex;
+        flex-direction: column; /* Mantiene el formulario en una columna */
+        width: 100%; /* Asegura que el formulario ocupe el ancho completo */
+    }
+
+    form input[type="text"], form input[type="tel"], form input[type="email"], form textarea{
+        width: 100%; /* Cambia el ancho a 100% para pantallas pequeñas */
+        font-size: 18px; /* Ajusta el tamaño de fuente para mejor legibilidad */
+    }
+
+    .contenido-contacto h1 {
+        font-size: 35px; /* Ajusta el tamaño del encabezado */
+    }
+
+    .contenido-contacto h2 {
+        font-size: 25px; /* Ajusta el tamaño del subencabezado */
+    }
+
+    .formulario p {
+        font-size: 25px; /* Ajusta el tamaño de la fuente del párrafo */
+    }
+
+    .info-contactos p {
+        font-size: 20px; /* Ajusta el tamaño de los textos de contacto */
+    }
+
+    #icocon {
+        font-size: 30px; /* Ajusta el tamaño del icono */
+    }
+
+    .tex-contact {
+        font-size: 25px; /* Ajusta el tamaño de texto adicional */
+    }
+
+    form input[type="checkbox"] {
+        transform: scale(1.5); /* Aumenta el tamaño del checkbox */
+    }
+
+    #aceptoterminos {
+        font-size: 23px; /* Ajusta el tamaño del texto del checkbox */
+        margin-left: 15px; /* Mantiene el margen a la izquierda */
+    }
+}

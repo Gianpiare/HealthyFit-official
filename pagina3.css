@@ -1,0 +1,154 @@
+.contenidopag3{
+    margin-top: 140px;
+    cursor: default;
+}
+.text-container3 h1{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 0;
+}
+.text-container3 p{
+    text-align: center;
+    margin: 10px 0 ;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #9b9a9a;
+}
+
+.container-todocard{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 50px;
+}
+.card .parrafo-card{
+   padding: 20px 30px;
+   text-align: center;
+}
+.parrafo-card h1{
+    font-size: 25px;
+    font-weight: 850;
+    color: darkcyan;
+}
+.parrafo-card p{
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+.parrafo-card a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background:black;
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.parrafo-card a:hover{
+    transform: scale(1.1);
+    background: #2FAC66;
+    transition: 0.3s;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+/* Responsivo para tablet */
+@media (max-width: 1125px) {
+    
+.container-todocard{
+    display: block;
+    padding-right: 40px;
+}
+.card{
+    width: 90%;
+    margin-left: 85px;
+    margin-top: 80px;
+}
+.card img{
+    width: 100%;
+}
+.text-container3 h1{
+    font-size: 50px;
+}
+.text-container3 p{
+    font-size: 26px;
+}
+.parrafo-card h1{
+    font-size: 37px;
+    font-weight: 850;
+}
+.parrafo-card p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+.parrafo-card a{
+    padding: 30px;
+    margin-top: 40px;
+    background:black;
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 27px;
+}
+}
+
+/* Mediaqueri Celular */
+
+@media (max-width: 990px) {
+.container-todocard{
+    display: block;
+}
+.text-container3 h1{
+    font-size: 35px;
+}
+.text-container3 p{
+    font-size: 1.1rem;
+}
+.card{
+    width: 90%;
+    margin-left: 40px;
+}
+.parrafo-card h1{
+    font-size: 37px;
+    font-weight: 850;
+}
+.parrafo-card p{
+    margin-top: 30px;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.parrafo-card a{
+    padding: 15px;
+    margin-top: 30px;
+    background:black;
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 16px;
+}
+}

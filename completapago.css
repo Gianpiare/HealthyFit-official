@@ -1,0 +1,101 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 500px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centrado vertical y horizontal */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Títulos */
+h1 {
+    font-size: 28px; /* Tamaño de fuente */
+    color: #333; /* Color oscuro */
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #666; /* Color gris */
+    text-align: center; /* Centrar texto */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex; /* Flexbox para la alineación */
+    flex-direction: column; /* Columna */
+}
+
+/* Etiquetas */
+label {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #555; /* Color gris oscuro */
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="month"],
+select {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Campo de CVV */
+input[type="text"]#cvv {
+    width: 100px; /* Ancho fijo */
+}
+
+/* Botón de pago */
+.boton-principal {
+    padding: 12px; /* Espaciado interno */
+    background-color: #2FAC66; /* Color de fondo verde */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton-principal:hover {
+    background-color: #28a659; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos para el mensaje de error o éxito (opcional) */
+.mensaje {
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centrar texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos adaptativos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* 90% de ancho en pantallas pequeñas */
+        padding: 15px; /* Menor espaciado interno */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+    }
+
+    p {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+}

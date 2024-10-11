@@ -1,0 +1,80 @@
+#testimonials {
+    margin-top: 100px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    cursor: default;
+}
+
+#testimonials h2 {
+font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+    color: #333;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+#testimonials p{
+    margin-bottom: 50px;
+    color: #a3a3a3;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.testimonial {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.1); /* Eleva el testimonio al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Añade sombra al pasar el mouse */
+}
+
+.testimonial-image {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+}
+
+.author {
+    margin: 10px 0 0;
+    color: darkcyan;
+}
+
+/* Responsivo para tablet */
+@media (max-width: 1125px) {
+    #testimonials p{
+        font-size: 30px;
+    }
+    #testimonials {
+        margin-top: 1300px;
+    }
+}
+/* Responsivo para celular */
+@media (max-width: 990px){
+    #testimonials {
+        padding: 50px;
+        background-color: #f9f9f9;
+        text-align: center;
+        cursor: default;
+    }
+    #testimonials p{
+        font-size: 15px;
+    }
+}

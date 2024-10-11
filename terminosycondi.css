@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Color de fondo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0; /* Borde sutil */
+}
+
+h1 {
+    text-align: center;
+    color: black; /* Color principal */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 25px;
+    font-size: 1.5em; /* Tamaño de fuente para subtítulos */
+    border-bottom: 2px solid rgb(3, 197, 197); /* Subrayado de títulos */
+    padding-bottom: 5px; /* Espacio debajo del subtítulo */
+}
+
+p {
+    line-height: 1.8; /* Mejora la legibilidad */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+.terminos {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.terminos input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Aumenta el tamaño del checkbox */
+}
+
+.boton { /* Cambié el estilo del botón para el enlace */
+    background-color: #1abc9c; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Tamaño de fuente */
+    display: block;
+    text-align: center; /* Centra el texto dentro del enlace */
+    margin: 20px auto; /* Centra el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.boton:hover {
+    background-color: #16a085; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de levantamiento */
+}
+
+.boton:active {
+    transform: translateY(0); /* Regresa a su posición original al hacer clic */
+}

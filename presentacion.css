@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.contenidopag1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    gap: 30px;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+.cont-text1{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.text-container h1 {
+    color: black;
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 90px;
+    cursor: default;
+}
+
+
+
+.text-container p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #a3a3a3;
+    line-height: 30px;
+    cursor: default;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #01b14d;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #01b14d;
+    color: #fff;
+}
+
+.btn:hover {
+    background: crimson;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+/* Imagen */
+.img-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-grafic {
+    margin-top: 50px;
+    border-radius: 50px;
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.img-grafic:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Responsivo para tablet */
+@media (max-width: 1125px) {
+    .hero-section {
+        height: 160vw;
+        padding: 0 100px;
+    }
+
+    .contenidopag1 {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .text-container p {
+        font-size: 1.4rem;
+        line-height: 35px;
+        margin-bottom: 50px;
+        margin-top: 60px;
+    }
+
+    .text-container h1 {
+        color: black;
+        font-size: 90px;
+    }
+
+    .btn {
+        font-size: 1.7rem;
+        padding: 25px;
+    }
+    .img-container {
+        margin-top:10px; /* Espacio entre texto y la imagen */
+        width: 100%; /* Asegúrate que ocupe el 100% del ancho */
+        justify-content: center; /* Centra la imagen */
+    }
+
+    .img-grafic {
+        max-width: 100%; /* Asegúrate que la imagen no exceda el contenedor */
+    }
+}
+
+/* Mediaqueri Celular */
+
+@media (max-width: 990px) {
+    .hero-section {
+        height: 180vh; /* Cambiar a auto para un mejor ajuste */
+        padding: 20px; /* Ajustar el padding */
+    }
+    .contenidopag1{
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra el contenido */
+    }
+    .text-container p{
+        font-size: 15px; /* Ajusta el tamaño de fuente */
+        line-height: 30px; /* Ajustar el interlineado */
+        text-align: left; /* Centra el texto */
+    }
+    .text-container h1{
+        color: black;
+        font-size: 48px; /* Tamaño ajustado */
+        text-align: left; /* Centra el texto */
+        line-height: 60px;
+    }
+    .btn {
+        font-size: 1.2rem; /* Tamaño de botón ajustado */
+        width: 100%; /* Hacer botones de ancho completo */
+        padding: 15px; /* Aumentar padding */
+    }
+    .img-container {
+        margin-top: 50px; /* Espacio entre texto y la imagen */
+        width: 100%; /* Asegúrate que ocupe el 100% del ancho */
+        justify-content: center; /* Centra la imagen */
+    }
+
+    .img-grafic{
+        max-width: 90vw; /* Reduce ligeramente el tamaño de la imagen */
+    }
+}

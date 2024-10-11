@@ -1,0 +1,43 @@
+/* Estilos para el Banner */
+.banner0{
+    cursor: default;
+    position: relative;
+    background:url(/ejerciciopara.png);
+    background-position: center center; /* Asegura que esté centrada tanto horizontal como verticalmente */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh; /* Mantener el alto mínimo como el 100% de la ventana */
+    /* background-attachment: fixed; (Puedes deshabilitarlo temporalmente para ver si afecta) */
+}
+.cont-banner0 h1{
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-top: 80px;
+    text-align: center;
+}
+.cont-banner0 p{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.cont-banner0{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.overlay0{
+    background:rgba(0, 0, 0, 0.5) ;
+    width: 100%;
+    min-height: 100vh;
+}
+.cont-banner0 h1{
+    text-align: center;
+    margin-bottom: 10px;
+}

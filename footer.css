@@ -1,0 +1,31 @@
+footer {
+    background-color: #101010; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado vertical */
+    position: relative; /* Para posicionar elementos en el footer */
+    bottom: 0; /* Asegura que el footer esté en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra suave en la parte superior */
+}
+
+.social-icons {
+    margin-bottom: 10px; /* Espaciado debajo de los íconos */
+}
+
+.social-icons a {
+    color: #ffffff; /* Color blanco para los íconos */
+    margin: 0 10px; /* Espaciado entre íconos */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    font-size: 24px; /* Tamaño de los íconos */
+    transition: transform 0.2s; /* Efecto de transición suave */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Aumentar tamaño al pasar el ratón */
+}
+
+footer p {
+    margin: 0; /* Eliminar margen del párrafo */
+    font-size: 14px; /* Tamaño de la fuente del párrafo */
+}

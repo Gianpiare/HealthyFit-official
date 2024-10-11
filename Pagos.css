@@ -1,0 +1,175 @@
+/* Estilos generales */
+body{
+    font-family: "Montserrat", sans-serif;
+}
+  .precio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo-seccion .contenido {
+    text-align: center;
+  }
+  
+  .encabezado {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .elige {
+    color: #000;
+  }
+  
+  .plan {
+    color: #2FAC66;
+  }
+  
+  .texto {
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .contenedor {
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .pestanas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .boton {
+    padding: 10px 30px;
+    border: 2px solid #2FAC66;
+    color: #2FAC66;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .boton-activo {
+    background-color: #2FAC66;
+    color: #fff;
+  }
+  
+  .boton:hover {
+    background-color: #39ca78;
+    color: white;
+  }
+  
+  .contenido-pestana {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .columna {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    max-width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vector {
+    width: 100%;
+    height: 100%;
+    background-color: #2FAC66;
+  }
+  
+  .precio-plan {
+    text-align: center;
+  }
+  
+  .encabezado-plan {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2FAC66;
+    margin-bottom: 10px;
+  }
+  
+  .precio-texto {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #000;
+  }
+  
+  .separador {
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .contenido-incluye {
+    margin-bottom: 20px;
+  }
+  
+  .lista {
+    list-style: none;
+  }
+  
+  .elemento-lista {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .check {
+    width: 20px;
+    height: 20px;
+    background-color: #2FAC66;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .acciones {
+    text-align: center;
+  }
+  
+  .boton-principal {
+    background-color: #2FAC66;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-principal:hover {
+    background-color: #28a659;
+  }
+  
+  .texto-boton {
+    font-size: 16px;
+  }
+  
+  /* Adaptabilidad para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .contenido-pestana {
+      flex-direction: column;
+    }
+  
+    .columna {
+      max-width: 100%;
+    }
+  }
+  

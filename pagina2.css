@@ -1,0 +1,190 @@
+/* Sección Página 2 */
+.hero-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.contenidopag2 { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1700px;
+    width: 100%;
+    gap: 400px;
+}
+
+.text-container2 {
+    flex: 1;
+}
+
+.text-container2 h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    line-height: 60px;
+    transition: 0.3s;
+}
+
+.text-container2 h1:hover {
+    color: #2FAC66;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text-container2 p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #9b9a9a;
+    line-height: 30px;
+    cursor: default;
+}
+
+.perfil2 {
+    border-radius: 50px;
+    width: 700px;
+}
+
+/* Efecto hover para agrandar el perfil */
+.perfil2:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.img-container2 {
+    perspective: 1000px;
+    transition: transform 0.5s ease;
+}
+
+.img-container2:hover {
+    transform: rotateY(20deg) rotateX(10deg);
+    transition: 0.5;
+}
+
+/* Estilo del botón */
+.btn-primary2 {
+    color: #9b9a9a;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+/* Línea rectangular debajo del botón */
+.btn-primary2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2FAC66;
+    transition: width 0.4s ease;
+}
+
+/* Hover del botón */
+.btn-primary2:hover {
+    color: #2FAC66;
+}
+
+/* Hover de la línea debajo del botón */
+.btn-primary2:hover::after {
+    width: 100%;
+    color: #2FAC66;
+}
+
+/* Responsivo para tablet */
+@media (max-width: 1125px) {
+    .hero-section2 {
+        height: auto;
+        padding: 0 100px; /* Ajustar el padding para pantallas pequeñas */
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    .contenidopag2 {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra el contenido */
+        gap: 20px; /* Ajustar el espacio entre elementos */
+    }
+
+    .text-container2 {
+        text-align: center; /* Centra el texto */
+        padding: 0; /* Eliminar padding para una mejor alineación */
+    }
+
+    .text-container2 p {
+        font-size: 1.4rem;
+        line-height: 45px;
+    }
+
+    .text-container2 h1 {
+        margin-bottom: 40px; /* Menos margen en pantallas pequeñas */
+        font-size: 55px; /* Ajustar el tamaño del título */
+        font-weight: 800;
+    }
+
+    .btn-primary2 {
+        font-weight: 600;
+        font-size: 1.8rem; /* Ajustar el tamaño del botón */
+    }
+
+    .img-container2 {
+        margin-bottom: 40px; /* Espacio entre texto y la imagen */
+        display: flex; /* Añadir display flex para alinear */
+        justify-content: center; /* Centra horizontalmente */
+        width: 100%; /* Asegúrate que ocupe el 100% del ancho */
+    }
+
+    .img-grafic2 {
+        max-width: 100%; 
+        height: auto; /* Asegúrate que mantenga la relación de aspecto */
+    }
+}
+
+/* Mediaqueri Celular */
+
+@media (max-width: 990px) {
+    .hero-section2 {
+        height: 115vh; /* Cambiar a auto para un mejor ajuste */
+        padding: 20px; /* Ajustar el padding */
+    }
+    .contenidopag2{
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra el contenido */
+    }
+    .text-container2 p{
+        font-size: 15px; /* Ajusta el tamaño de fuente */
+        line-height: 30px; /* Ajustar el interlineado */
+        text-align: left; /* Centra el texto */
+    }
+    .text-container2 h1{
+        font-size: 50px; 
+        text-align: left; 
+        line-height: 60px;
+    }
+    .btn-primary2{
+        font-size: 1.1rem;
+        width: 100%; 
+        padding: 15px; 
+    }
+    .perfil2 {
+        border-radius: 50px;
+        width: 350px;
+    }
+    
+    .img-container2{
+        margin-top: 30px; /* Espacio entre texto y la imagen */
+        width: 60%; /* Asegúrate que ocupe el 100% del ancho */
+        justify-content: center; /* Centra la imagen */
+    }
+
+    .img-grafic2{
+        max-width: 90vw; /* Reduce ligeramente el tamaño de la imagen */
+    }
+}
